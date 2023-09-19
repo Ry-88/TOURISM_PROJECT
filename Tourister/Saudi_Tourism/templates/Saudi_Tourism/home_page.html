@@ -19,16 +19,22 @@
 <body>
     
     {% block content %}
-    <div class="div_image"> 
-        
-        <div class="covermsg">
+    
+    <div class="">
+
+        <video  autoplay loop muted class="back-video">
+            <source type="video/mp4" src="{% static 'images/visitsaudi.mp4'%}">
+            <p>Your browser doesn't support HTML5 video.</p>
+        </video>
+
+        <!-- <div class="covermsg">
             <p class="wellcome"> Saudi Tourism <br> Have you seen the magic of Saudi Arabia?</p>
         </div>
         
         <div class="covermsg">
 
             <p class="wellcome"> Tourism in Saudi Arabia enjoys a diversity of climate and terrain from north to south, as well as the presence of plains, valleys and mountains, rich in heritage places. </p>
-        </div>
+        </div> -->
         
 
         {% endblock %}
@@ -36,27 +42,27 @@
         <div class="side_bar">
 
             <div class="div_side_bar">
-                <a class="choice" href="{% url 'home_page' %}"> Home Page   </a>
+                <a class="choice" href="{% url 'Saudi_Tourism:home_page' %}"> Home Page   </a>
                 
             </div>
 
             <div class="div_side_bar">
-                <a class="choice" href="{% url 'riyadh_page' %}"> Riyadh   </a>
+                <a class="choice" href="{% url 'Saudi_Tourism:riyadh_page' %}"> Riyadh   </a>
                 
             </div>
         
             <div class="div_side_bar">
-                <a class="choice" href="{% url 'abha_page' %}"> Abha </a>
+                <a class="choice" href="{% url 'Saudi_Tourism:abha_page' %}"> Abha </a>
                 
             </div>
         
             <div class="div_side_bar">
-                <a class="choice" href="{% url 'alula_page' %}"> Alula </a>
+                <a class="choice" href="{% url 'Saudi_Tourism:alula_page' %}"> Alula </a>
                 
             </div>
             
             <div class="div_side_bar">
-                <a class="choice" href="{% url 'mekkah_page' %}"> Mekkah </a>
+                <a class="choice" href="{% url 'Saudi_Tourism:mekkah_page' %}"> Mekkah </a>
                 
             </div>
             
@@ -66,7 +72,7 @@
     
 
 
-
+        
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
